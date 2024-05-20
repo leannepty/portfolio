@@ -1,7 +1,6 @@
 "use client"
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import { Navbar } from "@/component/navbar";
 import { ChakraProvider } from "@chakra-ui/react";
 import customTheme from "@/utils/theme";

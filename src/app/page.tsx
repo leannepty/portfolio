@@ -1,10 +1,10 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Infos } from "@/component/Infos";
+import { Box } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      Hello world
-    </main>
+    <Box mr={250} ml={250} mt={50}>
+      <Infos/>
+    </Box>
   );
 }
