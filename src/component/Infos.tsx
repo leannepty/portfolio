@@ -1,14 +1,22 @@
+"use client"
+
 import { CVIcon } from '@/icons/CVIcon'
 import { LinkedinIcon } from '@/icons/LinkedinIcon'
 import { Card, CardBody, CardFooter, Divider, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
+import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 export const Infos = () => {
+  const [text] = useTypewriter({
+    words: ['Hello world !', 'Je suis Léanne Pauty'],
+    loop: 5
+  })
+
   return (
     <Card >
       <CardBody>
         <Flex>
-          <Stack m='6' spacing='3'>
-            <Heading size='lg'>Hello world !</Heading>
+          <Stack m='6'>
+            <Heading size='lg'>{text} <Cursor /></Heading>
             <Text>
               Je m&apos;appelle  Léanne PAUTY, je suis étudiante en troisème année d&apos;informatique à l&apos;IUT de Reims.
 
@@ -30,7 +38,7 @@ export const Infos = () => {
       <CardFooter>
         <Flex gap={2}>
           <LinkedinIcon />
-         <CVIcon/>
+          <CVIcon />
         </Flex>
       </CardFooter>
     </Card>
