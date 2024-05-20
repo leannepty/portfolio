@@ -2,7 +2,7 @@
 
 import { CVIcon } from '@/icons/CVIcon'
 import { LinkedinIcon } from '@/icons/LinkedinIcon'
-import { Card, CardBody, CardFooter, Divider, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
+import { Box, Card, CardBody, CardFooter, Divider, Flex, Heading, Image, Link, Stack, Text } from '@chakra-ui/react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 export const Infos = () => {
@@ -15,7 +15,7 @@ export const Infos = () => {
     <Card >
       <CardBody>
         <Flex>
-          <Stack m='6'>
+          <Stack m='6' spacing={8}>
             <Heading size='lg'>{text} <Cursor /></Heading>
             <Text>
               Je m&apos;appelle  Léanne PAUTY, je suis étudiante en troisème année d&apos;informatique à l&apos;IUT de Reims.
@@ -37,8 +37,15 @@ export const Infos = () => {
       <Divider />
       <CardFooter>
         <Flex gap={2}>
-          <LinkedinIcon />
-          <CVIcon />
+          <Link href='https://www.linkedin.com/in/l%C3%A9anne-pauty-488593227/' >
+            <LinkedinIcon />
+          </Link>
+          <Link
+            href='/img/PAUTY_CV.pdf'
+            download='PAUTY_CV'
+            rel="noopener noreferrer">
+            <CVIcon />
+          </Link>
         </Flex>
       </CardFooter>
     </Card>
