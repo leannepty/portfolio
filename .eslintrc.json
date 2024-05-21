@@ -1,3 +1,17 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "object-shorthand": "warn",
+    "no-else-return": "warn",
+    "arrow-body-style": "warn",
+    "prefer-promise-reject-errors": "error",
+    "no-throw-literal": "error",
+    "no-useless-return": "warn",
+    "no-array-constructor": "error",
+    "no-lonely-if": "warn",
+    "no-unneeded-ternary": "warn",
+    "no-undef-init": "warn",
+    "no-console": "warn",
+    "indent": ["warn", 2]
+  }
 }

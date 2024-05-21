@@ -7,12 +7,10 @@ interface Props {
   isLast?: boolean
 }
 
-export const NavItem = ({ children, to = "/", isLast = false }: Props) => {
-  return (
-    <Link href={to}>
-      <Text >
-        {children}
-      </Text>
-    </Link>
-  )
-}
+export const NavItem = ({ children, to = "/", isLast = false }: Props) => (
+  <Link href={to}>
+    <Text >
+      {children}
+    </Text>
+  </Link>
+)

@@ -1,8 +1,6 @@
 import { Card } from "@chakra-ui/react"
 
-export const Projet = () => {
-    return (
-        <Card> TODO: panneau projet réutilisable</Card>
+export const Projet = () => (
+  <Card> TODO: panneau projet réutilisable</Card>
           
-    )
-}
+)
