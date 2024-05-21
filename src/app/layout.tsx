@@ -10,8 +10,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr" >
       <body>
+        <style jsx global>{`
+        html, body {
+          scroll-behavior: smooth;
+        }
+      `}
+      </style>
         <ChakraProvider theme={customTheme}>
           <Navbar />
           {children}
