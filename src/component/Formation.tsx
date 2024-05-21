@@ -1,4 +1,4 @@
-import { Box, Heading, Stack, Step, StepDescription, StepIcon, StepIndicator, StepNumber, StepSeparator, StepStatus, StepTitle, Stepper, Text } from "@chakra-ui/react"
+import { Box, Heading, Stack, Step, StepDescription, StepIcon, StepIndicator, StepNumber, StepSeparator, StepStatus, StepTitle, Stepper } from "@chakra-ui/react"
 
 const steps = [
   { title: "Baccalauréat génral | 2018-2021", description: "Admis mention bien. Spécialité Numérique et Sciences Informatiques et Langue et Littérature, langue étrangère anglais. C'est à travers ma spécialité informatique que j'ai été séduite par ce domaine ; j'y ai notamment appris les bases du développement avec de l'algorithmie en Python et du développement de sites web vitrines en HTML et CSS." },
@@ -7,15 +7,13 @@ const steps = [
   { title: 'BUT Informatique 3ème année | 2023-2024', description: "Cette année est réalisée en alternance, ayant plus d'apétences pour le développement, j'ai entrepris un changement de parcours afin de rejoindre le parcours Développement. J'ai eu l'occasion de découvrir la PWA, le développement mobile ainsi que la réalisation de jeux vidéos." },
 ]
 
-//TODO: colorsheme stepper
-
 export const Formation = () => (
   <Stack m='6' spacing={8}>
-    <Heading size={'lg'}>
-				Ma formation
+    <Heading>
+      Ma formation
     </Heading>
 
-    <Stepper index={4} orientation='vertical' h={'400px'} >
+    <Stepper index={4} orientation='vertical' h={96} colorScheme="primary" >
       {steps.map((step, index) => (
         <Step key={index}>
           <StepIndicator>

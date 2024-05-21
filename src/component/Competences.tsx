@@ -2,19 +2,16 @@ import { Box, Card, CardBody, Heading, Stack, Tag, Text, Wrap } from "@chakra-ui
 import React from "react"
 import { skills } from "./constants"
 
-//TODO: colorscheme 
-
-
 export const Competences = () => (
   <Stack m='6' spacing={8}>
-    <Heading size={'lg'}>
-		Mes compétences
+    <Heading>
+      Mes compétences
     </Heading>
     {
       skills.map((theme) => (
         <Box key={theme.theme}>
 
-          <Tag size={"lg"} variant='solid' colorScheme='teal' mb={5}>
+          <Tag size={"lg"} variant='solid' colorScheme='primary' mb={5}>
             {theme.theme}
           </Tag>
           <Wrap>

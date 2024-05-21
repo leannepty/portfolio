@@ -1,8 +1,9 @@
 "use client"
 
+import { ArrowIcon } from '@/icons/ArrowIcon'
 import { CVIcon } from '@/icons/CVIcon'
 import { LinkedinIcon } from '@/icons/LinkedinIcon'
-import { Box, Card, CardBody, CardFooter, Divider, Flex, Heading, Image, Link, Stack, Text } from '@chakra-ui/react'
+import { Flex, Heading, Image, Link, Stack, Text } from '@chakra-ui/react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 export const Infos = () => {
@@ -12,35 +13,35 @@ export const Infos = () => {
   })
 
   return (
-    <Flex>
-      <Stack m='6' spacing={8}>
-        <Heading size='lg'>{text} <Cursor /></Heading>
-        <Text>
-          Je m&apos;appelle  Léanne PAUTY, je suis étudiante en troisème année d&apos;informatique à l&apos;IUT de Reims.
-
-        </Text>
-        <Text>
-          Ma formation ma permis d&apos;acquérir les bases de l&apos;informatique : je maîtrise notamment les langages python, Javascript, PHP, HTML, CSS et SQL avec l&apos;utilisation de Git, Oracle ainsi que divers framework backend comme frontend.
-
-        </Text>
-
-        <Text>
-          J&apos;ai effectué ma seconde année de BUT informatique au sein du parcours Data ce qui m&apos;a permis de maîtriser davantage la gestion des données et leur exploitation en parallèle des enseignements de développement. Cependant ayant plus d&apos;appétence pour le développement, j&apos;ai effectué les démarches afin de rejoindre le parcours développement pour ma 3ème année.
-        </Text>
-        <Flex gap={2}>
-          <Link href='https://www.linkedin.com/in/l%C3%A9anne-pauty-488593227/' >
-            <LinkedinIcon />
-          </Link>
-          <Link
-            href='/img/PAUTY_CV.pdf'
-            download='PAUTY_CV'
-            rel="noopener noreferrer">
-            <CVIcon />
-          </Link>
-        </Flex>
-      </Stack>
-      <Image
-        boxSize='sm' src='img/myself.png' alt='PAUTY Léanne photographie' borderRadius={"full"} />
+    <Flex height="90vh" alignItems={"center"} justifyContent={"center"} direction={"column"}>
+      <Flex>
+        <Stack spacing={8}>
+          <Heading>{text} <Cursor /></Heading>
+          <Text>
+            Passionnée par le développement logiciel, je m&apos;efforce de transformer des idées en solutions concrètes et efficaces.
+          </Text>
+          <Text>
+            Au fil de mes études et de mes projets personnels, j&apos;ai acquis une expérience dans plusieurs langages de programmation et technologies. Je suis constamment à la recherche de nouvelles opportunités pour améliorer mes compétences et contribuer à des projets innovants.
+          </Text>
+          <Text>
+            Parcourez mon portfolio pour découvrir mes réalisations, compétences et projets. N&apos;hésitez pas à me contacter :&#41;
+          </Text>
+          <Flex gap={2}>
+            <Link href='https://www.linkedin.com/in/l%C3%A9anne-pauty-488593227/' >
+              <LinkedinIcon />
+            </Link>
+            <Link
+              href='/img/PAUTY_CV.pdf'
+              download='PAUTY_CV'
+              rel="noopener noreferrer">
+              <CVIcon />
+            </Link>
+          </Flex>
+        </Stack>
+        <Image
+          boxSize='sm' src='img/myself.png' alt='PAUTY Léanne photographie' borderRadius={"full"} />
+      </Flex>
+      <ArrowIcon />
     </Flex>
 
   )

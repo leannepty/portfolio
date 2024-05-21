@@ -1,15 +1,12 @@
-import { Box, Heading, ListItem, Stack, Tag, Text, UnorderedList } from "@chakra-ui/react"
-
-//TODO: colorscheme
+import { Box, Heading, ListItem, Stack, Tag, UnorderedList } from "@chakra-ui/react"
 
 export const Experiences = () => (
-
   <Stack m='6' spacing={8}>
-    <Heading size={'lg'}>Mon Expérience</Heading>
+    <Heading>Mon Expérience</Heading>
 
     <Box>
-      <Tag size={"lg"} variant='solid' colorScheme='teal' mb={5}>
-					Stage développement web frontend chez JVS-Mairistem
+      <Tag size={"lg"} variant='solid' colorScheme='primary' mb={5}>
+        Stage développement web frontend chez JVS-Mairistem
       </Tag>
       <UnorderedList ml={10}>
         <ListItem>Refonte d&apos;une application web de comptabilité destinée aux communes</ListItem>
@@ -21,8 +18,8 @@ export const Experiences = () => (
     </Box>
 
     <Box>
-      <Tag size={"lg"} variant='solid' colorScheme='teal' mb={5}>
-					Alternance développement web fullstack chez JVS-Mairistem
+      <Tag size={"lg"} variant='solid' colorScheme='primary' mb={5}>
+        Alternance développement web fullstack chez JVS-Mairistem
       </Tag>
       <UnorderedList ml={10}>
         <ListItem>Développement d&apos;une application web de location de lieux publics</ListItem>

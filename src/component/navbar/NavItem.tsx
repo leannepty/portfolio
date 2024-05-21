@@ -4,10 +4,9 @@ import Link from "next/link"
 interface Props {
   children: string | JSX.Element,
   to?: string,
-  isLast?: boolean
 }
 
-export const NavItem = ({ children, to = "/", isLast = false }: Props) => (
+export const NavItem = ({ children, to = "/"}: Props) => (
   <Link href={to}>
     <Text >
       {children}
