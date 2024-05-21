@@ -2,6 +2,7 @@
   "extends": "next/core-web-vitals",
   "rules": {
     "object-shorthand": "warn",
+    "no-unused-vars": "warn",
     "no-else-return": "warn",
     "arrow-body-style": "warn",
     "prefer-promise-reject-errors": "error",
