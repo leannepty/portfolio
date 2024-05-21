@@ -3,7 +3,7 @@ import { Formation } from "@/component/Formation";
 import { Box } from "@chakra-ui/react";
 import { Experiences } from "@/component/Experiences";
 import { Competences } from "@/component/Competences";
-import { Projets } from "@/component/Projets";
+import { Projets } from "@/component/projets";
 
 export default function Home() {
   return (

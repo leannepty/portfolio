@@ -1,9 +1,10 @@
 "use client"
 
 import { ArrowIcon } from '@/icons/ArrowIcon'
-import { CVIcon } from '@/icons/CVIcon'
+import { DownloadIcon } from '@/icons/Download'
 import { LinkedinIcon } from '@/icons/LinkedinIcon'
-import { Flex, Heading, Image, Link, Stack, Text } from '@chakra-ui/react'
+import { MailIcon } from '@/icons/Mailcon'
+import { Flex, Heading, Image, Link, Stack, Tag, Text } from '@chakra-ui/react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 export const Infos = () => {
@@ -26,15 +27,24 @@ export const Infos = () => {
           <Text>
             Parcourez mon portfolio pour découvrir mes réalisations, compétences et projets. N&apos;hésitez pas à me contacter :&#41;
           </Text>
-          <Flex gap={2}>
+          <Flex gap={3}>
             <Link href='https://www.linkedin.com/in/l%C3%A9anne-pauty-488593227/' >
-              <LinkedinIcon />
+              <Tag size='lg' variant='solid' colorScheme='primary' mb={5} w={'fit-content'}>
+                <Text m={3}>Visitez mon Linkedin</Text> <LinkedinIcon/>
+              </Tag>
             </Link>
             <Link
               href='/img/PAUTY_CV.pdf'
               download='PAUTY_CV'
               rel="noopener noreferrer">
-              <CVIcon />
+              <Tag size='lg' variant='solid' colorScheme='primary' mb={5} w={'fit-content'}>
+                <Text m={3}>Téléchargez mon CV</Text> <DownloadIcon/>
+              </Tag>
+            </Link>
+            <Link href='mailto:pautyleanne@gmail.com'>
+              <Tag size='lg' variant='solid' colorScheme='primary' mb={5} w={'fit-content'}>
+                <Text m={3}>Contactez moi par mail</Text> <MailIcon/>
+              </Tag>
             </Link>
           </Flex>
         </Stack>
