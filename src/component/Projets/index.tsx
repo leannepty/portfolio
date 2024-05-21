@@ -1,7 +1,10 @@
+"use client"
+
 import { Card, CardBody, CardHeader, Flex, Heading, Link, Stack, Text } from "@chakra-ui/react"
 import { projets } from "./constants"
 import { Technologies } from "../Technologies"
 import { GitHub } from "../logo/GitHub"
+import { Carousel } from "../Carousel"
 
 export const Projets = () => (
   <Flex height="100vh" alignItems={"center"} justifyContent={"center"} direction={"column"} id='projets'>
@@ -17,9 +20,8 @@ export const Projets = () => (
                 <Heading size={"md"} color={'white'}>{projet.name}</Heading>
               </CardHeader>
               <CardBody>
-                {/* TODO: carrousel */}
                 <Flex gap={10}>
-                  {projet.images[0]}
+                  <Carousel images={projet.images}></Carousel>
                   <Stack>
                     <Text color={'grey'}>
                     Date: {projet.date}
@@ -39,7 +41,6 @@ export const Projets = () => (
 
                     <Technologies technologies={projet.technologies} prefixKey="proj" />
                     {projet.githubUrl && (<Link href={projet.githubUrl}><GitHub /></Link>)}
-
                     {projet.url && (<Link href={projet.url}>Accéder au site</Link>)}
                   </Stack>
                 </Flex>

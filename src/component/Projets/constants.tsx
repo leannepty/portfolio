@@ -22,8 +22,8 @@ export const projets: Projet[] = [
     technologies: ['React', 'NextJS', 'Typescript', 'Apache'],
     githubUrl: "https://github.com/leannepty/portfolio",
     images: [
-      <Image src="img/logo-jvs.png" key={'toto'} />,
-      <Image src="img/apiPlatform.png" key={'tata'} />
+      <Image src="img/exp.png" key={'experience'} alt="capture d'écran expériences"/>,
+      <Image src="img/comp.png" key={'competences'} alt="capture d'écran compétences"/>
     ]
-  }//TODO: images
+  }//TODO: better images + projets
 ]

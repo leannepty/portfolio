@@ -1,5 +1,5 @@
 import { ArrowIcon } from "@/icons/ArrowIcon"
-import { Card, CardBody, Flex, Heading, Tag, Text, Wrap, Image, Box } from "@chakra-ui/react"
+import { Card, CardBody, Flex, Heading, Text, Image, Box } from "@chakra-ui/react"
 import Link from "next/link"
 import { Technologies } from "./Technologies"
 
@@ -43,7 +43,7 @@ const experiences: { logo: React.JSX.Element, description: string, nom: string, 
 
 export const Experiences = () => (
   <Flex gap={8} h={"100vh"} direction={"column"} alignItems={"center"} justifyContent={"center"} id="experiences">
-    <Heading m={3}>Mon Expérience</Heading>
+    <Heading m={3}>Mes Expérience</Heading>
     <Flex gap={5}>
       {experiences.map((exp) => (
         <Card key={exp.nom} variant={'outline'}>

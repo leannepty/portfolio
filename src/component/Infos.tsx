@@ -13,7 +13,7 @@ export const Infos = () => {
   })
 
   return (
-    <Flex height="100vh" alignItems={"center"} justifyContent={"center"} direction={"column"} id='infos'>
+    <Flex height="80vh" alignItems={"center"} direction={"column"} id='infos' mt={200}>
       <Flex>
         <Stack spacing={8}>
           <Heading>{text} <Cursor /></Heading>
