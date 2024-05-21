@@ -18,10 +18,12 @@ export const Competences = () => (
           </Tag>
           <Wrap>
             {theme.content.map((skill) => (
-              <Card key={skill.nom} >
+              <Card key={skill.nom} m={2} variant={"outline"}>
                 <CardBody>
-                  <Text>{skill.nom}</Text>
-                  {skill.logo}
+                  <Flex direction={"column"} alignItems={"center"}>
+                    <Text>{skill.nom}</Text>
+                    {skill.logo}
+                  </Flex>
                 </CardBody>
               </Card>
             ))}
