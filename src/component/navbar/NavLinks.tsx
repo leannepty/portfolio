@@ -13,9 +13,11 @@ export const NavLinks = ({ isOpen }: { isOpen: boolean }) => (
       direction={["column", "row", "row", "row"]}
       pt={[4, 4, 0, 0]}
     >
-      <NavItem to="/">Qui suis je ?</NavItem>
-      <NavItem to="/menus">Mon Parcours</NavItem>
-      <NavItem to="/infos-pratique"> Mes projets </NavItem>
+      <NavItem to="#infos">Qui suis je ?</NavItem>
+      <NavItem to="#formation">Ma formation</NavItem>
+      <NavItem to="#experiences">Mes experiences</NavItem>
+      <NavItem to="#competences">Mes compétences </NavItem>
+      <NavItem to="#projets">Mes projets </NavItem>
     </Stack>
   </Box>
 );

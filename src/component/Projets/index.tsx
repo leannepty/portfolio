@@ -1,9 +1,9 @@
-import { Heading, Stack } from "@chakra-ui/react"
+import { Flex, Heading } from "@chakra-ui/react"
 
 export const Projets = () => (
-  <Stack m='6' spacing={8}>
-    <Heading size={'lg'}>
-                Mes projets
+  <Flex height="100vh" alignItems={"center"} justifyContent={"center"} direction={"column"} id='projets'>
+    <Heading>
+      Mes projets
     </Heading>
-  </Stack>
+  </Flex>
 )

@@ -13,7 +13,7 @@ export const Infos = () => {
   })
 
   return (
-    <Flex height="90vh" alignItems={"center"} justifyContent={"center"} direction={"column"}>
+    <Flex height="100vh" alignItems={"center"} justifyContent={"center"} direction={"column"} id='infos'>
       <Flex>
         <Stack spacing={8}>
           <Heading>{text} <Cursor /></Heading>
@@ -41,7 +41,9 @@ export const Infos = () => {
         <Image
           boxSize='sm' src='img/myself.png' alt='PAUTY Léanne photographie' borderRadius={"full"} />
       </Flex>
-      <ArrowIcon />
+      <Link href='#formation'>
+        <ArrowIcon />
+      </Link>
     </Flex>
 
   )

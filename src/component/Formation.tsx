@@ -1,4 +1,6 @@
-import { Box, Heading, Stack, Step, StepDescription, StepIcon, StepIndicator, StepNumber, StepSeparator, StepStatus, StepTitle, Stepper } from "@chakra-ui/react"
+import { ArrowIcon } from "@/icons/ArrowIcon"
+import { Box, Flex, Heading, Step, StepDescription, StepIcon, StepIndicator, StepNumber, StepSeparator, StepStatus, StepTitle, Stepper } from "@chakra-ui/react"
+import Link from "next/link"
 
 const steps = [
   { title: "Baccalauréat génral | 2018-2021", description: "Admis mention bien. Spécialité Numérique et Sciences Informatiques et Langue et Littérature, langue étrangère anglais. C'est à travers ma spécialité informatique que j'ai été séduite par ce domaine ; j'y ai notamment appris les bases du développement avec de l'algorithmie en Python et du développement de sites web vitrines en HTML et CSS." },
@@ -8,7 +10,7 @@ const steps = [
 ]
 
 export const Formation = () => (
-  <Stack m='6' spacing={8}>
+  <Flex m='6' gap={8} direction="column" h={'100vh'} alignItems={"center"} justifyContent={"center"} id="formation">
     <Heading>
       Ma formation
     </Heading>
@@ -32,6 +34,9 @@ export const Formation = () => (
         </Step>
       ))}
     </Stepper>
+    <Link href='#experiences' >
+      <ArrowIcon />
+    </Link>
 
-  </Stack>
+  </Flex>
 )

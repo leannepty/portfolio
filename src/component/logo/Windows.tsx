@@ -1,6 +1,6 @@
-export const Windows=()=>(
-  <svg width="100" height="100" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-    
+export const Windows = () => (
+  <svg width="60" height="60" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+
     <title>windows [#174]</title>
     <desc>Created with Sketch.</desc>
     <defs>

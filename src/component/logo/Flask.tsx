@@ -1,6 +1,6 @@
 export const Flask = ()=>(
-  <svg fill="#000000"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"  width="100"
-	 height="100" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xmlSpace="preserve">
+  <svg fill="#000000"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"  width="60"
+	 height="60" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xmlSpace="preserve">
 
     <g id="e6c6b53d3c8160b22dad35a0f7103ecc">
 

@@ -1,17 +1,19 @@
-import { Box, Card, CardBody, Heading, Stack, Tag, Text, Wrap } from "@chakra-ui/react"
+import { Card, CardBody, Flex, Heading, Tag, Text, Wrap } from "@chakra-ui/react"
 import React from "react"
 import { skills } from "./constants"
+import { ArrowIcon } from "@/icons/ArrowIcon"
+import Link from "next/link"
 
 export const Competences = () => (
-  <Stack m='6' spacing={8}>
+  <Flex gap={8} direction={"column"} alignItems={"center"} id="competences">
     <Heading>
       Mes compétences
     </Heading>
     {
       skills.map((theme) => (
-        <Box key={theme.theme}>
+        <Flex key={theme.theme} direction={"column"} alignItems={'center'}>
 
-          <Tag size={"lg"} variant='solid' colorScheme='primary' mb={5}>
+          <Tag size='lg' variant='solid' colorScheme='primary' mb={5} w={'fit-content'}>
             {theme.theme}
           </Tag>
           <Wrap>
@@ -25,7 +27,10 @@ export const Competences = () => (
             ))}
           </Wrap>
 
-        </Box>
+        </Flex>
       ))}
-  </Stack>
+    <Link href="#projets">
+      <ArrowIcon />
+    </Link>
+  </Flex>
 )

@@ -1,9 +1,10 @@
-import { Box, Heading, ListItem, Stack, Tag, UnorderedList } from "@chakra-ui/react"
+import { ArrowIcon } from "@/icons/ArrowIcon"
+import { Box, Flex, Heading, ListItem, Tag, UnorderedList } from "@chakra-ui/react"
+import Link from "next/link"
 
 export const Experiences = () => (
-  <Stack m='6' spacing={8}>
+  <Flex gap={8} h={"100vh"} direction={"column"} alignItems={"center"} justifyContent={"center"}  id="experiences">
     <Heading>Mon Expérience</Heading>
-
     <Box>
       <Tag size={"lg"} variant='solid' colorScheme='primary' mb={5}>
         Stage développement web frontend chez JVS-Mairistem
@@ -32,5 +33,8 @@ export const Experiences = () => (
         <ListItem>Sensibilisation à l&apos;importance de l&apox;UX UI</ListItem>
       </UnorderedList>
     </Box>
-  </Stack>
+    <Link href={'#competences'}>
+      <ArrowIcon />
+    </Link>
+  </Flex>
 )

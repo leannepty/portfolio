@@ -1,7 +1,7 @@
-export const SQL=()=>(
-  <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
-	 width="80" height="80" viewBox="0 0 550.801 550.801"
-	 xmlSpace="preserve">
+export const SQL = () => (
+  <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+    width="50" height="50" viewBox="0 0 550.801 550.801"
+    xmlSpace="preserve">
     <g>
       <g>
         <path d="M277.425,402.116c-20.208,0-31.87,19.833-31.87,44.317c-0.2,24.88,11.853,43.934,31.681,43.934
