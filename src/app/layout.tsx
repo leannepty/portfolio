@@ -2,7 +2,7 @@
 
 import { Navbar } from "@/component/navbar";
 import { ChakraProvider } from "@chakra-ui/react";
-import customTheme from "@/utils/theme";
+import customTheme from "@/theme/theme";
 import { Footer } from "@/component/Footer";
 
 export default function RootLayout({

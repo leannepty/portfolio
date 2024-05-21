@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
+import { tagTheme } from "./Tag";
 
 const colors = {
   primary: {
@@ -9,6 +10,6 @@ const colors = {
   }
 };
 
-const customTheme = extendTheme({ colors });
+const customTheme = extendTheme({ colors, components: { Tag: tagTheme }, });
 
 export default customTheme;

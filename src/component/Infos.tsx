@@ -14,7 +14,7 @@ export const Infos = () => {
   })
 
   return (
-    <Flex height="80vh" alignItems={"center"} direction={"column"} id='infos' mt={200}>
+    <Flex height="70vh" alignItems={"center"} direction={"column"} id='infos' mt={200}>
       <Flex>
         <Stack spacing={8}>
           <Heading>{text} <Cursor /></Heading>
@@ -29,21 +29,21 @@ export const Infos = () => {
           </Text>
           <Flex gap={3}>
             <Link href='https://www.linkedin.com/in/l%C3%A9anne-pauty-488593227/' >
-              <Tag size='lg' variant='solid' colorScheme='primary' mb={5} w={'fit-content'}>
-                <Text m={3}>Visitez mon Linkedin</Text> <LinkedinIcon/>
+              <Tag variant='solid' mb={5} w={'fit-content'}>
+                <Text m={3}>Visitez mon Linkedin</Text> <LinkedinIcon />
               </Tag>
             </Link>
             <Link
               href='/img/PAUTY_CV.pdf'
               download='PAUTY_CV'
               rel="noopener noreferrer">
-              <Tag size='lg' variant='solid' colorScheme='primary' mb={5} w={'fit-content'}>
-                <Text m={3}>Téléchargez mon CV</Text> <DownloadIcon/>
+              <Tag variant='solid' mb={5} w={'fit-content'}>
+                <Text m={3}>Téléchargez mon CV</Text> <DownloadIcon />
               </Tag>
             </Link>
             <Link href='mailto:pautyleanne@gmail.com'>
-              <Tag size='lg' variant='solid' colorScheme='primary' mb={5} w={'fit-content'}>
-                <Text m={3}>Contactez moi par mail</Text> <MailIcon/>
+              <Tag variant='solid' mb={5} w={'fit-content'}>
+                <Text m={3}>Contactez moi par mail</Text> <MailIcon />
               </Tag>
             </Link>
           </Flex>
