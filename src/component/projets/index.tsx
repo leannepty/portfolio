@@ -1,6 +1,6 @@
 "use client"
 
-import { Card, CardBody, CardHeader, Flex, Heading, Link, Stack, Text } from "@chakra-ui/react"
+import { Card, CardBody, CardHeader, Flex, Heading, Link, Stack, Tag, Text } from "@chakra-ui/react"
 import { projets } from "./constants"
 import { Technologies } from "../Technologies"
 import { GitHub } from "../logo/GitHub"
@@ -49,5 +49,8 @@ export const Projets = () => (
           ))
       }
     </Flex>
+    <Link href="#haut">
+      <Tag m={20} variant='solid'>Revenir en haut de page</Tag>
+    </Link>
   </Flex>
 )

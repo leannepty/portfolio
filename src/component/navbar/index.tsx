@@ -11,7 +11,7 @@ export const Navbar = () => {
   const toggle = () => setIsOpen(!isOpen);
   //TODO: update responsive 
   return (
-    <Box bg={"primary.500"}>
+    <Box bg={"primary.500"} id="haut">
       <NavBarContainer >
         <>
           <Logo />

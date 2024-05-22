@@ -14,7 +14,7 @@ export const Infos = () => {
   })
 
   return (
-    <Flex height="70vh" alignItems={"center"} direction={"column"} id='infos' mt={200}>
+    <Flex height="70vh" alignItems={"center"} direction={"column"} mt={200}>
       <Flex>
         <Stack spacing={8}>
           <Heading>{text} <Cursor /></Heading>
