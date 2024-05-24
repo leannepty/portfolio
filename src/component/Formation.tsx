@@ -10,7 +10,7 @@ const steps = [
 ]
 
 export const Formation = () => (
-  <Flex m='6' gap={8} direction="column" h={'100vh'} alignItems={"center"} justifyContent={"center"} id="formation">
+  <Flex m='6' gap={8} direction="column" h={['fit-content','100vh']} alignItems={"center"} justifyContent={"center"} id="formation">
     <Heading>
       Ma formation
     </Heading>

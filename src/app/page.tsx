@@ -7,12 +7,12 @@ import { Projets } from "@/component/projets";
 
 export default function Home() {
   return (
-    <Box mr={250} ml={250} mt={50}>
+    <Box mr={[10, 50, 250]} ml={[10, 50, 250]} mt={50}>
       <Infos />
       <Formation />
       <Experiences />
       <Competences />
-      <Projets/>
+      <Projets />
     </Box>
   );
 }

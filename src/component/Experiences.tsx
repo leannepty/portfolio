@@ -1,5 +1,5 @@
 import { ArrowIcon } from "@/icons/ArrowIcon"
-import { Card, CardBody, Flex, Heading, Text, Image, Box } from "@chakra-ui/react"
+import { Card, CardBody, Flex, Heading, Text, Image, Wrap } from "@chakra-ui/react"
 import Link from "next/link"
 import { Technologies } from "./Technologies"
 
@@ -42,19 +42,17 @@ const experiences: { logo: React.JSX.Element, description: string, nom: string, 
 ]
 
 export const Experiences = () => (
-  <Flex gap={8} h={"100vh"} direction={"column"} alignItems={"center"} justifyContent={"center"} id="experiences">
+  <Flex gap={8} h={['fit-content', "100vh"]} direction={"column"} alignItems={"center"} justifyContent={"center"} id="experiences">
     <Heading m={3}>Mes Expérience</Heading>
-    <Flex gap={5}>
+    <Wrap>
       {experiences.map((exp) => (
-        <Card key={exp.nom} variant={'outline'}>
+        <Card key={exp.nom} variant={'outline'} maxW={600}>
           <CardBody>
-            <Flex m={7}>
+            <Wrap m={7}>
               {exp.logo}
-              <Box>
-                <Heading size={"md"}>{exp.nom}</Heading>
-                <Text color='grey' mt={1}>{exp.date}</Text>
-              </Box>
-            </Flex>
+              <Heading size={"md"}>{exp.nom}</Heading>
+            </Wrap>
+            <Text color='grey' mt={1}>{exp.date}</Text>
             <Text>{exp.description}</Text>
             <Technologies technologies={exp.techno} prefixKey={"exp"} />
 
@@ -62,7 +60,7 @@ export const Experiences = () => (
 
         </Card>
       ))}
-    </Flex>
+    </Wrap>
     <Link href={'#competences'}>
       <ArrowIcon />
     </Link>
