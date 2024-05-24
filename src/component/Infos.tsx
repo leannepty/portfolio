@@ -18,7 +18,7 @@ export const Infos = () => {
       <Wrap>
         <Stack spacing={8} maxW={'70%'}>
           <Heading>{text} <Cursor /></Heading>
-          <Text >
+          <Text>
             Passionnée par le développement logiciel, je m&apos;efforce de transformer des idées en solutions concrètes et efficaces.
           </Text>
           <Text>
@@ -50,7 +50,7 @@ export const Infos = () => {
         </Stack>
         <Image boxSize='sm' src='img/myself.png' alt='PAUTY Léanne photographie' borderRadius={"full"} />
       </Wrap>
-      <Link href='#formation'>
+      <Link href='#formation' mt={10}>
         <ArrowIcon />
       </Link>
     </Flex>
