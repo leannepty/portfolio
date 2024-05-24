@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import { tagTheme } from "./Tag";
+import { stepperTheme } from "./Stepper";
 
 const colors = {
   primary: {
@@ -10,6 +11,6 @@ const colors = {
   }
 };
 
-const customTheme = extendTheme({ colors, components: { Tag: tagTheme, Text: { baseStyle: {fontSize: 'xl' } } } })
+const customTheme = extendTheme({ colors, components: { Tag: tagTheme, Stepper: stepperTheme, Text: { baseStyle: { fontSize: ['sm', 'xl'] } } } })
 
 export default customTheme;

@@ -15,7 +15,7 @@ export const Projets = () => (
       {
         projets.map((projet) =>
           (
-            <Card key={projet.name} variant={"outline"} borderRadius={12} maxW={"1000px"}>
+            <Card key={projet.name} variant={"outline"} borderRadius={12} maxW={"1200px"}>
               <CardHeader bg={'primary.500'} borderTopRadius={12}>
                 <Heading size={"md"} color={'white'}>{projet.name}</Heading>
               </CardHeader>

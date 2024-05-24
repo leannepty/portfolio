@@ -12,6 +12,9 @@ const baseStyle = definePartsStyle({
     p: 2,
     w: 'fit-content'
   },
+  label: {
+    fontSize: 'xl'
+  }
 })
 
 export const tagTheme = defineMultiStyleConfig({ baseStyle, defaultProps: { variant: 'solid' } })
