@@ -29,21 +29,21 @@ export const Infos = () => {
           </Text>
           <Flex gap={3}>
             <Link href='https://www.linkedin.com/in/l%C3%A9anne-pauty-488593227/' >
-              <Tag variant='solid' mb={5} w={'fit-content'}>
-                <Text m={3}>Visitez mon Linkedin</Text> <LinkedinIcon />
+              <Tag >
+                <Text>Visitez mon Linkedin</Text> <LinkedinIcon />
               </Tag>
             </Link>
             <Link
               href='/img/PAUTY_CV.pdf'
               download='PAUTY_CV'
               rel="noopener noreferrer">
-              <Tag variant='solid' mb={5} w={'fit-content'}>
-                <Text m={3}>Téléchargez mon CV</Text> <DownloadIcon />
+              <Tag >
+                <Text>Téléchargez mon CV</Text> <DownloadIcon />
               </Tag>
             </Link>
             <Link href='mailto:pautyleanne@gmail.com'>
-              <Tag variant='solid' mb={5} w={'fit-content'}>
-                <Text m={3}>Contactez moi par mail</Text> <MailIcon />
+              <Tag >
+                <Text>Contactez moi par mail</Text> <MailIcon />
               </Tag>
             </Link>
           </Flex>

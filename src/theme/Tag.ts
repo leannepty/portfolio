@@ -7,8 +7,11 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const baseStyle = definePartsStyle({
   container: {
     bg: 'primary.500',
-    size: 'lg'
+    size: 'lg',
+    fontSize: 'lg',
+    p: 2,
+    w: 'fit-content'
   },
 })
 
-export const tagTheme = defineMultiStyleConfig({ baseStyle })
+export const tagTheme = defineMultiStyleConfig({ baseStyle, defaultProps: { variant: 'solid' } })

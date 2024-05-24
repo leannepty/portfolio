@@ -3,7 +3,7 @@ import { Tag, Wrap } from "@chakra-ui/react";
 export const Technologies = ({ technologies, prefixKey }: { technologies: string[], prefixKey: string }) => (
   <Wrap mt={5}>
     {technologies.map((tech) => (
-      <Tag variant='solid' w={'fit-content'} key={`${prefixKey}-${tech}`}>
+      <Tag key={`${prefixKey}-${tech}`}>
         {tech}
       </Tag>
     ))}

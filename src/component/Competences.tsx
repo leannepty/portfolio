@@ -12,7 +12,7 @@ export const Competences = () => (
     {
       skills.map((theme) => (
         <Flex key={theme.theme} direction={"column"} alignItems={'center'}>
-          <Tag variant='solid' mb={5} w={'fit-content'}>
+          <Tag  mb={5}>
             {theme.theme}
           </Tag>
           <Wrap>

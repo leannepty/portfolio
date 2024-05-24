@@ -50,7 +50,7 @@ export const Projets = () => (
       }
     </Flex>
     <Link href="#haut">
-      <Tag m={20} variant='solid'>Revenir en haut de page</Tag>
+      <Tag m={20} >Revenir en haut de page</Tag>
     </Link>
   </Flex>
 )

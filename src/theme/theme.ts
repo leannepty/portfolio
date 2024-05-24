@@ -10,6 +10,6 @@ const colors = {
   }
 };
 
-const customTheme = extendTheme({ colors, components: { Tag: tagTheme }, });
+const customTheme = extendTheme({ colors, components: { Tag: tagTheme } });
 
 export default customTheme;
